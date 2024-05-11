@@ -1,0 +1,67 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: white;
+  font-family: 'メイリオ', Meiryo,'ヒラギノ角ゴシック','Hiragino Sans','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+  background-color: black;
+}
+h1{
+  font-size: 120%;
+  margin: 10px 0;
+  text-align: center;
+}
+.timeline-wrapper {
+  margin: 0 auto;
+  width: 600px;
+}
+.tweet-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2% 5%;
+  width: 90%;
+  border: 1px solid #fff;
+}
+.tweet-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  resize: none;
+  field-sizing: content; /*ChromeとEdgeで使えるプロパティ*/
+}
+.tweet-form textarea::placeholder {
+  color: aliceblue;
+}
+input::file-selector-button {
+  appearance: none;
+  color: #fff;
+  padding: 5px 30px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: black;
+}
+.tweet-form button {
+  appearance: none;
+  padding: 5px 40px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.tweet-form button:hover {
+  cursor: pointer;
+}
+.timeline-area{
+  width: 600px;
+}
+.tweet {
+  padding: 2% 5%;
+  width: 90%;
+  border: 1px solid #fff;
+  border-top: none;
+}
+.tweet img {
+  width: 100%;
+}

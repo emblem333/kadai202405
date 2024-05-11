@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Twitter画面作り</title>
+</head>
+<body>
+  <header>
+    <h1>Twitter風画面作り</h1>
+  </header>
+  <main>
+    <div class="timeline-wrapper">
+      <div class="tweet-form">
+        <textarea id="tweet-input" placeholder="今、どうしてる？"></textarea>
+        <input type="file" id="image-input" accept="image/*">
+        <button onclick="postTweet()">ツイートする</button>
+      </div>
+      <div id="timeline" class="timeline-area"></div>
+    </div>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
