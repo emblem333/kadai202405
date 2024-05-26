@@ -14,5 +14,7 @@ const PostMemo = () => {
     saveMemo(Post)
     displayTimeline();
     document.getElementById('memo_title').value = '';
+    document.getElementById('memo_body').value = '';
+    document.getElementById('image_input').value = '';
   }
 }

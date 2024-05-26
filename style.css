@@ -10,6 +10,7 @@
 h1{
   font-size: 150%;
   text-align: center;
+  margin: 2rem 1rem;
   margin-bottom: 0;
 }
 .timeline-wrapper {
@@ -17,7 +18,7 @@ h1{
   width: 28rem;
 }
 .memo-form {
-  width: 80%;
+  width: 90%;
   display: flex;
   text-align: center;
   flex-wrap: wrap;
