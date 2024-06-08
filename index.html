@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <h1>メモ帳進化系</h1>
+    <h1>メモ帳</h1>
   </header>
   <main>
     <div class="timeline-wrapper">
@@ -18,11 +18,13 @@
         <input type="text" id="memo_title" class="title-control" placeholder="タイトル" />
         <textarea id="memo_body" class="body-control" placeholder="保存したい内容を入力" style="width: 230px; height: 70px;"></textarea>
         <input type="file" id="image_input" accept="image/*">
-        <button class="btn btn-primary" onclick="post_memo()">保存</button>
+        <button class="btn btn-primary" onclick="postMemo()">保存</button>
       </div>
-      <div id="memos" class="memos-area"></div>
-    </div>
-  </main>
+      <div id="list-memos" class="card-area">
+        <div class="memos-area"></div>
+      </div>
+      </div>
+      </main>
 </body>
-<script src="script.js"></script>
+<script src="script2.js"></script>
 </html>

@@ -12,14 +12,14 @@ const postTweet = () => {
     //関数呼び出し
     saveTweet(tweet)
     displayTimeline();
-    document.getElementById('tweet-input').value = '';
-    document.getElementById('image-input').value = '';
+    document.getElementById('tweet-input').value = ''; //入力後テキストをクリアする
+    document.getElementById('image-input').value = '';//入力後テキストをクリアする
   }
 }
 
 //投稿する内容をローカルストレージに格納する関数
 const saveTweet = (tweet) => {
-  const tweets = JSON.parse(localStorage.getItem('tweets')) || []; //からJSON形式からオブジェクトに変換
+  const tweets = JSON.parse(localStorage.getItem('tweets')) || []; //JSON形式からオブジェクトに変換
   tweets.push(tweet);// ローカルストレージから出した（変化した）オブジェクトに新しく入力されたデータを追加
   localStorage.setItem('tweets',JSON.stringify(tweets)) // オブジェクトからJSON形式に変換してローカルストレージに格納
 }

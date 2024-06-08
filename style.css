@@ -17,7 +17,7 @@ h1{
   margin: 0 auto;
   width: 28rem;
 }
-.memo-form {
+.memo-form  {
   width: 90%;
   display: flex;
   text-align: center;
@@ -30,4 +30,16 @@ h1{
 }
 textarea {
   resize: none;
+}
+.card-title {
+  color: white;
+}
+.card-area{
+  width: 145%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  margin-top: 1rem;
+  margin-right:1rem;
 }
